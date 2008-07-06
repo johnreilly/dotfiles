@@ -36,6 +36,7 @@ alias gba='git branch -a -v'
 alias gs='git status -v'
 alias gst='git status -v'
 alias gt='git tag'
+alias gka='gitk --all &'
 
 
 # rails
