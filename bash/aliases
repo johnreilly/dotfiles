@@ -2,7 +2,7 @@
 # cd
 
 alias up='cd ..'
-function c { cd ~/src/$1; }
+function s { cd ~/src/$1; }
 
 
 # ls
