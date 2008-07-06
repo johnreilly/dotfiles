@@ -2,26 +2,38 @@
 # cd
 
 alias up='cd ..'
-function c { cd ~/code/$1; }
+function c { cd ~/src/$1; }
 
 
 # ls
 
 alias l="ls -lAh"
+alias ls="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
 
+# svn
+
+
+alias sup="svn up"
+alias sst="svn st"
+alias sci="svn ci"
 
 # git
 
+alias g='git'
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gco='git checkout'
+alias gcom='git checkout master'
 alias gb='git branch -v'
+alias gba='git branch -a -v'
 alias gs='git status -v'
+alias gst='git status -v'
+alias gt='git tag'
 
 
 # rails
