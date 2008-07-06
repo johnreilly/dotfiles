@@ -1,3 +1,5 @@
-git clone git://github.com/ryanb/dotfiles ~/.dotfiles
-cd ~/.dotfiles
+Fork of Ryan Bates' dotfile project. http://github.com/ryanb/dotfiles/tree
+
+git clone git://github.com/johnreilly/dotfiles
+cd dotfiles
 rake install
