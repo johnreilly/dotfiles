@@ -3,12 +3,30 @@
 	email = jr@trms.com
 [alias]
 	co = checkout
+	st = status
+	br = branch
+	ci = commit
 [color]
 	diff = auto
 	status = auto
 	branch = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
 [core]
-	excludesfile = /Users/rbates/.gitignore
+	excludesfile = /Users/john/.gitignore
 	editor = mate -w
 [apply]
 	whitespace = nowarn
+[merge]
+	tool = opendiff
