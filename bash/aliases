@@ -3,6 +3,7 @@
 
 alias up='cd ..'
 function s { cd ~/src/$1; }
+function h { cd ~/$1; }
 
 
 # ls
