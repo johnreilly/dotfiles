@@ -1,7 +1,7 @@
 
 # cd
 
-alias up='cd ..'
+alias u='cd ..'
 function s { cd ~/src/$1; }
 function h { cd ~/$1; }
 
