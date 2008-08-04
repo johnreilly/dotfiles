@@ -1,3 +1,4 @@
+. ~/.zsh/aliases
 
 # cd
 
@@ -52,5 +53,4 @@ alias migrate='rake db:migrate db:test:clone'
 
 
 # misc
-
 alias reload='. ~/.bash_profile'
