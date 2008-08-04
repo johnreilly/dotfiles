@@ -5,6 +5,7 @@ else
 %# ${fg_no_colour}'
 fi
 
+export CLICOLOR=1
 
 EDITOR='mate -w'
 PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
