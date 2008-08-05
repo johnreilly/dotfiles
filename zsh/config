@@ -1,7 +1,7 @@
 if [[ -n $SSH_CONNECTION ]]; then
   PS1='%m:%3~$(git_branch_for_prompt)%# '
 else
-  PROMPT='${fg_yellow}%n${fg_green}@%m ${fg_cyan}%~ ${fg_yellow}$(git_branch_for_prompt)
+  PROMPT='${fg_yellow}%n${fg_green}@%m ${fg_cyan}%~${fg_yellow}$(git_info_for_prompt)
 %# ${fg_no_colour}'
 fi
 
