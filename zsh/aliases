@@ -8,14 +8,11 @@ alias ll="ls -l"
 alias la='ls -A'
 
 # svn
-
-
 alias sup="svn up"
 alias sst="svn st"
 alias sci="svn ci"
 
 # git
-
 alias g='git'
 alias gl='git pull'
 alias gp='git push'
