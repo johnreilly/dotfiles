@@ -54,3 +54,7 @@ alias migrate='rake db:migrate db:test:clone'
 
 # misc
 alias reload='. ~/.bash_profile'
+
+#textmate
+alias m='mate'
+alias mt='mate .'

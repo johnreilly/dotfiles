@@ -47,5 +47,9 @@ alias rst='touch tmp/restart.txt'
 # commands starting with % for pasting from web
 alias %=' '
 
+#textmate
+alias m='mate'
+alias mt='mate .'
+
 # misc
 alias reload='. ~/.zshrc'
