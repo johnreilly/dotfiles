@@ -29,7 +29,8 @@ alias gs='git status'
 alias gst='git status'
 alias gt='git tag'
 alias gka='gitk --all &'
-alias gk='gitk --all &'
+alias gk='gitk &'
+alias gai='git add -i'
 
 # rails
 alias sc='script/console'
