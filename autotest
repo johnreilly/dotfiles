@@ -7,7 +7,7 @@ AUTOTEST_IMAGE_PATH = "#{File.dirname(File.symlink?(__FILE__) ? File.readlink(__
 module Autotest::Growl
   def self.growl title, msg, img, pri=0, stick=""
     cmd = "growlnotify --image #{img.inspect} -p #{pri} -m #{msg.inspect} #{title.inspect} #{stick}"
-    puts cmd
+    #puts cmd
     system cmd
   end
 
