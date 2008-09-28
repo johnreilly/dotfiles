@@ -1,5 +1,6 @@
 export CLICOLOR=1
 export TERM=xterm-color
 export LSCOLORS=ExFxCxDxBxegedabagacad
+export EC2_HOME=/usr/local/ec2-api-tools
 
 PS1='\[\033[0;33m\]\u\[\033[0;32m\]@\h\[\033[0;36m\] \w\[\033[0;33m\]$(__git_ps1 " (%s)") \n$\[\033[00m\] '
