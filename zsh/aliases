@@ -51,3 +51,6 @@ alias mt='mate .'
 
 # misc
 alias reload='. ~/.zshrc'
+
+#apache
+alias vhosts='sudo mate /etc/apache2/users/john.conf sudo mate /etc/hosts'
