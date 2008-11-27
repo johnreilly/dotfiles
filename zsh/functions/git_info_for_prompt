@@ -1,3 +1,10 @@
+# Show character if changes are pending. from http://pastie.org/325104
+git_status() {
+  if current_git_status=$(git status | grep 'added to commit' 2> /dev/null); then
+    echo "✍"
+  fi
+}
+
 local g="$(git rev-parse --git-dir 2>/dev/null)"
 if [ -n "$g" ]; then
   local r
@@ -43,6 +50,7 @@ if [ -n "$g" ]; then
   if [ -n "$1" ]; then
     printf "$1" "${b##refs/heads/}$r"
   else
-    printf "[%s]" "${b##refs/heads/}$r"
+    printf " [%s $(git_status)]" "${b##refs/heads/}$r"
   fi
 fi
+
