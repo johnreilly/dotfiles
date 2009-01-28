@@ -4,9 +4,10 @@ PROMPT='${fg_yellow}%n${fg_green}@%m ${fg_cyan}%~${fg_yellow}$(git_info_for_prom
 export CLICOLOR=1
 export EC2_HOME=/usr/local/ec2-api-tools
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
+export ANT_HOME=/usr/local/ant
 
 EDITOR='mate -w'
-PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$EC2_HOME/bin:$PATH"
+PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$EC2_HOME/bin:/usr/local/ant/bin:$PATH"
 MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 cdpath=($cdpath ~/code)
