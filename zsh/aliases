@@ -30,7 +30,9 @@ alias gst='git status'
 alias gt='git tag'
 alias gka='gitk --all &'
 alias gk='gitk &'
+alias gx='gitx --all'
 alias gai='git add -i'
+alias gap='git add -p'
 
 # rails
 alias sc='script/console'
