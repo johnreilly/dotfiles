@@ -8,3 +8,4 @@
 :verbose: true
 :backtrace: false
 :benchmark: false
+rdoc: --inline-source --line-numbers --format=html --template=hanna
