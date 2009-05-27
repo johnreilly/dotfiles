@@ -1,36 +1,3 @@
 #!/usr/bin/env ruby
-# Modified from: http://pastie.org/227704
+require 'autotest-mac'
 require 'autotest/redgreen'
-
-AUTOTEST_IMAGE_PATH = "#{File.dirname(File.symlink?(__FILE__) ? File.readlink(__FILE__) : File.expand_path(__FILE__))}/resources/icons"
-
-module Autotest::Growl
-  def self.growl title, msg, img, pri=0, stick=""
-    cmd = "growlnotify --image #{img.inspect} -p #{pri} -m #{msg.inspect} #{title.inspect} #{stick}"
-    #puts cmd
-    system cmd
-  end
-
-  Autotest.add_hook :ran_command do |autotest|
-    filtered = autotest.results.grep(/\d+\s.*examples?/)
-    if filtered.empty?
-      output = ""
-      title = "No tests found"
-    else
-      output = filtered.last.slice(/(\d+)\s.*examples?,.*(\d+)\s.*failures?(,.*(\d+)\s.*errors?)?/).strip
-      title = "#{filtered.last.slice(/(\d+)\s.*examples?/).strip} run"
-    end
-    
-    if output =~ /[1-9]\serrors?/
-      growl "#{title}", "#{output}", "#{AUTOTEST_IMAGE_PATH}/fail.png", +2, "--sticky"
-    elsif output =~ /[1-9]\sfailures?/
-      growl "#{title}", "#{output}", "#{AUTOTEST_IMAGE_PATH}/pending.png", +1
-    else
-      growl "#{title}", "#{output}", "#{AUTOTEST_IMAGE_PATH}/pass.png", -2
-    end
-  end
-end
-
-Autotest.add_hook :initialize do |at|
-  %w{.svn .hg .git vendor}.each {|exception| at.add_exception(exception)}
-end
