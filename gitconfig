@@ -26,6 +26,7 @@
 [core]
 	excludesfile = /Users/john/.gitignore
 	editor = mate -w
+	autocrlf = input
 [apply]
 	whitespace = nowarn
 [merge]
