@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
-require 'autotest-mac'
 require 'autotest/redgreen'
+require 'autotest/growl'
+require 'autotest/fsevent'
