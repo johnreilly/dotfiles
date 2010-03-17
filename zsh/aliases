@@ -53,6 +53,7 @@ alias mt='mate .'
 
 # misc
 alias reload='. ~/.zshrc'
+alias bp='sudo bluepill'
 
 #apache
 alias vhosts='sudo mate /etc/apache2/users/john.conf sudo mate /etc/hosts'
