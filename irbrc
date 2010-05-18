@@ -3,6 +3,7 @@ require 'irb/completion'
 require 'irb/ext/save-history'
 require 'rubygems'
 require 'wirble'
+require 'ap'
 
 ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
 Wirble.init
@@ -14,6 +15,12 @@ IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 IRB.conf[:AUTO_INDENT] = true
+
+IRB::Irb.class_eval do
+  def output_value
+    ap @context.last_value
+  end
+end
 
 class Object
   # list methods which aren't in superclass
