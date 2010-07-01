@@ -1,5 +1,5 @@
-PROMPT='${fg_yellow}%n${fg_green}@%m ${fg_cyan}%~${fg_yellow}$(git_info_for_prompt)
-%# ${fg_no_colour}'
+PROMPT='${fg_yellow}%n${fg_green}@%m ${fg_cyan}%~${fg_yellow}$(git_info_for_prompt) ${fg_red}$(~/.rvm/bin/rvm-prompt)
+${fg_yellow}%# ${fg_no_colour}'
 
 export CLICOLOR=1
 export EC2_HOME=/usr/local/ec2-api-tools
